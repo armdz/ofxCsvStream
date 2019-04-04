@@ -118,7 +118,7 @@ private:
         char* token = NULL;
 		do
 		{
-			token = strtok( token == NULL ? const_cast<char  *>(currentLine.c_str()) : NULL, "," );
+			token = strtok( token == NULL ? const_cast<char  *>(currentLine.c_str()) : NULL, "\t" );
             if ( token != NULL ) currentTokens.push_back(string( token ));
         }while( token != NULL );
 	}
